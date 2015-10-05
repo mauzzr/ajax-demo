@@ -31,7 +31,7 @@ body {
 
 
 a {
-    color: blue;
+    color: cyan;
     text-decoration: none;
 }
 
@@ -40,7 +40,7 @@ a:hover {
 }
 
 a:visited {
-    color: cyan;
+    color: #6441A5;
 }
 
 h1.title {
