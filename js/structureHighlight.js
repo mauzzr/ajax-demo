@@ -13,10 +13,17 @@
     // this function will run after the body has been loaded
     jQuery(document).ready( function() {
         jQuery.get( "huffmancoding.json", function( data ) {
-            placeContent( data ) ;  // construct output from the data read
+            parseObject( data ) ;  // construct output from the data read
         }, "json" );  // be sure to include this third parameter for weblab.cs.uml.edu
     });
     // -- End of instructor code --
 
+    function parseObject(data){
+        var strContent = "",
+            propertyName;
 
+        for(propertyName in data) {
+
+        }
+    }
 })();
