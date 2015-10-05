@@ -60,12 +60,14 @@ h1.title {
     text-align: left;
     font-size: 2em;
     font-weight: 700;
+    margin-bottom: 0.5em;
 }
 
 h2.sectionTitle {
     text-align: left;
     font-size: 1.5em;
     font-weight: 700;
+    margin-bottom: 0.2em;
 }
 
 /* ===Paragraph Styles=== */
