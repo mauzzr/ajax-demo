@@ -1,0 +1,32 @@
+{
+  "title" : "Huffman Coding",
+  "desc" : {
+    "start" : "The following is an excerpt from the",
+    "articleLinkText" : "Wikipedia article on Huffman coding.",
+    "articleURL" : "https://en.wikipedia.org/w/index.php?title=Huffman_coding&oldid=679683586",
+    "verID" : "679683586",
+    "finish" : "It is used under the terms of the",
+    "licenseText" : "Creative Commons Attribution-ShareAlike License.",
+    "licenseURL" : "http://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "sections" : [ {
+    "paragraphs" : [
+      "In computer science and information theory, a Huffman code is a particular type of optimal prefix code that is commonly used for lossless data compression. The process of finding and/or using such a code proceeds by means of Huffman coding, an algorithm developed by David A. Huffman while he was a Ph.D. student at MIT, and published in the 1952 paper 'A Method for the Construction of Minimum-Redundancy Codes.'",
+      "The output from Huffman's algorithm can be viewed as a variable-length code table for encoding a source symbol (such as a character in a file). The algorithm derives this table from the estimated probability or frequency of occurrence (weight) for each possible value of the source symbol. As in other entropy encoding methods, more common symbols are generally represented using fewer bits than less common symbols. Huffman's method can be efficiently implemented, finding a code in linear time to the number of input weights if these weights are sorted. However, although optimal among methods encoding symbols separately, Huffman coding is not always optimal among all compression methods."
+    ]
+  },
+    {
+      "title" : "History",
+      "paragraphs" : [
+        "In 1951, David A. Huffman and his MIT information theory classmates were given the choice of a term paper or a final exam. The professor, Robert M. Fano, assigned a term paper on the problem of finding the most efficient binary code. Huffman, unable to prove any codes were the most efficient, was about to give up and start studying for the final when he hit upon the idea of using a frequency-sorted binary tree and quickly proved this method the most efficient.",
+        "In doing so, the student outdid his professor, who had worked with information theory inventor Claude Shannon to develop a similar code. By building the tree from the bottom up instead of the top down, Huffman avoided the major flaw of the suboptimal Shannon-Fano coding."
+      ]
+    },
+    {
+      "title" : "Terminology",
+      "paragraphs" : [
+        "Huffman coding uses a specific method for choosing the representation for each symbol, resulting in a prefix code (sometimes called 'prefix-free codes', that is, the bit string representing some particular symbol is never a prefix of the bit string representing any other symbol). Huffman coding is such a widespread method for creating prefix codes that the term 'Huffman code' is widely used as a synonym for 'prefix code' even when such a code is not produced by Huffman's algorithm."
+      ]
+    }
+  ]
+}

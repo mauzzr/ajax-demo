@@ -1,0 +1,68 @@
+/* 91.461 Assignment 5
+ * File: styles.css
+ * Author: Peter Welby, pwelby@cs.uml.edu
+ * Styles to be applied to dynamically loaded content
+ * See: ../index.html, ../js/loadcontent.js
+ */
+
+/* Import Open Sans font from Google Fonts for use on this page */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic);
+
+body {
+    margin: 0;
+    background-color: #323232;
+    color: #f1f1f1;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+}
+
+/*  */
+#sidebar {
+    float: left;
+    width: 20%;
+}
+
+/* Push the content away from the edges to clean things up a bit */
+/* % here is % of the body, div#content's parent */
+#content {
+    float: left;
+    margin: 0 25% 0 5%;
+}
+
+
+a {
+    color: blue;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:visited {
+    color: cyan;
+}
+
+h1.title {
+    text-align: left;
+    font-size: 2em;
+    font-weight: 700;
+}
+
+h2.sectionTitle {
+    text-align: left;
+    font-size: 1.5em;
+}
+
+p {
+    margin-left: 50px;
+}
+
+p#desc {
+    font-size: 1em;
+    font-style: italic;
+}
+
+#section1 {
+    background-color: rgba(255,255,255,0.2);
+}
