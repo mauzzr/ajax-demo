@@ -50,6 +50,8 @@ function placeContent(objData) {
     $("#content").html(strPageContent);
 
     // Add event listeners for mouse-over highlighting
+    // Adding them separately for better flexibility, both in jQuery selectors
+    // and in styling
     sidebarAddListeners();
     pageAddListeners();
 }
@@ -143,7 +145,7 @@ function sidebarAddListeners() {
         $(this).hover(function() {
                 var strTargetClass = "."  + $(this).attr("class");
                 console.log($(this).attr("class") + " <<<OUT>>>");
-                $(strTargetClass).css("background-color", "rgba(108, 255, 0, 0.15)");
+                $(strTargetClass).css("background-color", "rgba(0, 108, 255, 0.15)");
             },
             function() {
                 var strTargetClass = "." + $(this).attr("class");
@@ -162,7 +164,7 @@ function pageAddListeners() {
         $(this).hover(function() {
                var strTargetClass = "."  + $(this).attr("class");
                console.log($(this).attr("class") + " <<<OUT>>>");
-               $(strTargetClass).css("background-color", "rgba(192, 255, 0, 0.15)");
+               $(strTargetClass).css("background-color", "rgba(255, 108, 0, 0.15)");
         },
         function() {
             var strTargetClass = "."  + $(this).attr("class");
