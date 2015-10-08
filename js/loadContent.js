@@ -2,6 +2,7 @@
  * File: loadcontent.js, created by Peter Welby 4 Oct. 2015
  * This script implements the jQuery-based AJAX loading of the
  * content stored separately in the file huffmancoding.json
+ * Updated 7 Oct. 2015 to add structure highlighting visualization
  */
 
 // -- Code below provided by instructor Jesse Heines in Assignment 5 specification --
@@ -163,12 +164,10 @@ function pageAddListeners() {
     $("*", "#content").each(function() {
         $(this).hover(function() {
                var strTargetClass = "."  + $(this).attr("class");
-               console.log($(this).attr("class") + " <<<OUT>>>");
                $(strTargetClass).css("background-color", "rgba(255, 108, 0, 0.15)");
         },
         function() {
             var strTargetClass = "."  + $(this).attr("class");
-            console.log($(this).attr("class") + " <<<OUT>>>");
             $(strTargetClass).css("background-color", "transparent");
         });
     });
