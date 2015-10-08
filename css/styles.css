@@ -10,6 +10,10 @@
 /* Import Inconsolata font for sidebar */
 @import url(https://fonts.googleapis.com/css?family=Inconsolata);
 
+html {
+    background-color: #323232;
+}
+
 /* Set width and height for body so that percentages */
 /* behave as expected */
 
@@ -31,14 +35,15 @@ body {
     position: fixed;
     background-color: #626262;
     border-right: 1px solid #f1f1f1;
+    padding-right: 10px;
     float: left;
     font-family: 'Inconsolata', monospace;
 }
 
-/* Content area gets the rest of the page */
+/* Push the content away from the left and right edges */
 #content {
     height:100%;
-    margin: 0 20% 0 25%;
+    margin: 0 20% 0 24%;
 }
 
 /* ===Link styles=== */
@@ -56,14 +61,14 @@ a:visited {
 }
 
 /* ===Header styles=== */
-h1.title {
+#content h1 {
     text-align: left;
     font-size: 2em;
     font-weight: 700;
     margin-bottom: 0.5em;
 }
 
-h2.sectionTitle {
+h2 {
     text-align: left;
     font-size: 1.5em;
     font-weight: 700;
@@ -81,7 +86,31 @@ p#desc {
     font-style: italic;
 }
 
+#sidebar p {
+    margin: 5px 8px 1em 8px;
+}
+
+
 /* Set up list indentation for nested sidebar lists */
+ul {
+    margin-left: 10px;
+}
+
 ul li {
-    padding-left: 10px;
+    padding-left: 15px;
+}
+
+/* Triangular bullet style, from CSS tricks. See below: */
+/* https://css-tricks.com/snippets/css/triangular-list-bullets/ */
+li:before {
+    content: "";
+    border-color: transparent #00ff6c;
+    border-style: solid;
+    border-width: 0.35em 0 0.35em 0.45em;
+    display: block;
+    height: 0;
+    width: 0;
+    left: -1em;
+    top: 0.9em;
+    position: relative;
 }
