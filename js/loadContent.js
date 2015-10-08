@@ -145,7 +145,7 @@ function sidebarAddListeners() {
         $(this).hover(function() {
                 var strTargetClass = "."  + $(this).attr("class");
                 console.log($(this).attr("class") + " <<<OUT>>>");
-                $(strTargetClass).css("background-color", "rgba(0, 108, 255, 0.15)");
+                $(strTargetClass).css("background-color", "rgba(0, 255, 64, 0.15)");
             },
             function() {
                 var strTargetClass = "." + $(this).attr("class");
