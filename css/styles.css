@@ -97,6 +97,7 @@ ul {
 }
 
 ul li {
+    padding-top: 0.5em;
     padding-left: 15px;
 }
 
