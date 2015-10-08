@@ -43,8 +43,12 @@ function placeContent(objData) {
     strPageContent += "<span class='data-desc-finish'>" + objData.desc.finish + "</span>" +" ";
     strPageContent += "<a href='" + objData.desc.licenseURL + "' class='data-desc-licenseURL'>"
         + "<span class='data-desc-licenseText'>" + objData.desc.licenseText + "</span></a></p>";
+
+    // start a div to hold the sections
+    strPageContent += "<div class='data-sections'>";
     // parse JSON into the content placement string
     strPageContent += parsePageContent(objData.sections, "data-sections");
+    strPageContent += "</div>";
 
     // place the content
     $("#sidebar").html(strSidebarContent);
@@ -145,12 +149,10 @@ function sidebarAddListeners() {
     $("#sidebar li").each(function() {
         $(this).hover(function() {
                 var strTargetClass = "."  + $(this).attr("class");
-                console.log($(this).attr("class") + " <<<OUT>>>");
                 $(strTargetClass).css("background-color", "rgba(0, 255, 64, 0.15)");
             },
             function() {
                 var strTargetClass = "." + $(this).attr("class");
-                console.log($(this).attr("class") + " <<<OUT>>>");
                 $(strTargetClass).css("background-color", "transparent");
             });
     })
